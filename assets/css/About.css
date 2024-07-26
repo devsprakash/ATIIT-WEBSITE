@@ -1,0 +1,257 @@
+
+.why-atiit {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+
+.why-atiit .content {
+    position: relative;
+    z-index: 2;
+}
+
+.why-atiit .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background-image: url('https://media.istockphoto.com/id/1320768057/photo/close-up-group-of-graduates-holding-a-hat-at-the-graduation-ceremony-at-the-university-t.jpg?s=612x612&w=0&k=20&c=wytici0lg3ojE6av73_Dfcy8viNQBAke4kLSegH1LrU=');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 0.7; /* Added opacity to make text more readable */
+}
+@media (max-width: 767px) {
+    .why-atiit .overlay {
+        left: 0;
+        top: 50%;
+        height: 50%;
+    }
+}
+
+.core-features {
+    padding: 50px 0;
+}
+.core-feature {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.core-feature img {
+    width: 100%;
+    max-width: 80px;
+}
+.core-feature-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.comparison-table th,
+.comparison-table td {
+    vertical-align: middle;
+}
+.comparison-table svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* .table-container {
+    margin: 30px 0;
+} */
+
+.table-title {
+    margin: 20px 0;
+}
+.feature-box {
+    text-align: center;
+    padding: 30px;
+    background-color: #d4d9df; /* Light gray background */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.feature-box img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-box h5 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .feature-box img {
+        max-width: 60px;
+    }
+
+    .feature-box h5 {
+        font-size: 1.2rem;
+    }
+}
+/* .container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+} */
+.header {
+text-align: center;
+margin-bottom: 20px;
+}
+.header h3 {
+font-size: 2em;
+margin: 0;
+}
+.faculty-logos, .success-stories {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-bottom: 20px;
+}
+.faculty-logos img, .success-stories img {
+max-width: 100px;
+margin: 10px;
+}
+.buttons {
+text-align: center;
+margin-bottom: 20px;
+}
+.buttons button {
+padding: 10px 20px;
+margin: 5px;
+cursor: pointer;
+border: none;
+background-color: #3c3ff0;
+color: white;
+border-radius: 5px;
+}
+.buttons button:hover {
+background-color: #3c3ff0;
+}
+.slick-prev, .slick-next {
+background: none;
+border: none;
+cursor: pointer;
+font-size: 1.5em;
+}
+.slick-prev:hover, .slick-next:hover {
+color: #3c3ff0;
+}
+.success-stories img {
+max-width: 200px;
+margin: 10px;
+}
+.success-header {
+text-align: center;
+margin-top: 20px;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.header, .success-header {
+text-align: center;
+margin-bottom: 20px;
+}
+.header h3, .success-header h3 {
+font-size: 2em;
+margin: 0;
+}
+.slick-slider {
+position: relative;
+}
+.slick-list {
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+.slick-track {
+display: flex;
+transition: transform 0.5s ease;
+}
+.slick-slide {
+min-width: 366px;
+box-sizing: border-box;
+}
+.slick-slide img {
+width: 100%;
+display: block;
+}
+.slick-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: none;
+border: none;
+cursor: pointer;
+font-size: 1.5em;
+}
+.slick-prev {
+left: 10px;
+}
+.slick-next {
+right: 10px;
+}
+.MuiButtonBase-root {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 6px 16px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+outline: none;
+text-decoration: none;
+color: #3c3ff0;
+font-size: 1em;
+transition: background-color 0.3s;
+}
+.MuiButtonBase-root:hover {
+background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiSvgIcon-root {
+font-size: 1.5em;
+}
+/* styles.css */
+/* styles.css */
+/* styles.css */
+.background {
+width: 100%;
+background-color: #3c3ff0; /* Blue background */
+padding: 20px 0; /* Adjust as needed for spacing */
+}
+
+
+.grid-item {
+width: 100%;
+text-align: center;
+}
+
+.heading {
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: 500;
+color: #3c3ff0;
+background-color: #fff;
+border: 2px solid #fff;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+background-color: #fff;
+color: #3c3ff0;
+}

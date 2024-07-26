@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review and Testimonials</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+
+.review-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(235, 241, 245);
+}
+
+.left-column, .right-column {
+  width: 48%;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.review-card {
+  background-color: #9090ec;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 380px;
+  height: 250px;
+}
+
+.review-card h2 {
+  margin: 20px 0 5px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.rating {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #f3cf40;
+}
+
+.stars {
+  margin-top: 10px;
+  font-size: 3rem;
+  color: #f1c40f;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 270px;
+}
+
+.testimonial-card {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.testimonial-nav {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.nav-button {
+  color: #4c90f6;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  border: 1px solid #4c90f6;
+}
+
+.nav-button:hover {
+  background-color: #4c90f6;
+  color: white;
+}
+
+
+.image-and-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.testimonial-image {
+  max-width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.company-logo {
+  max-width: 70px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.testimonial-text {
+  flex: 1;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.testimonial-text p {
+  color: #676666;
+  margin-top: 50px;
+}
+
+.testimonial-text p br {
+  color: #676666;
+  margin-top: 50px;
+}
+
+.testimonial-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.student-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .review-section-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .review-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonials-container {
+    margin-right: 0;
+  }
+
+  .testimonial-text {
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .rating {
+    font-size: 2.5rem;
+  }
+
+  .stars {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .review-section-container {
+    padding: 15px;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .review-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonials-container {
+    margin-right: 0;
+  }
+
+  .testimonial-text {
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 9px;
+  }
+
+  .rating {
+    font-size: 2.75rem;
+  }
+
+  .stars {
+    font-size: 2.75rem;
+  }
+}
+
+/* Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .review-section-container {
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .review-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonials-container {
+    margin-right: 0;
+  }
+
+  .testimonial-text {
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .rating {
+    font-size: 3rem;
+  }
+
+  .stars {
+    font-size: 3rem;
+  }
+}
+
+/* Laptops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .review-section-container {
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 48%;
+  }
+
+  .review-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonials-container {
+    margin-right: 0;
+  }
+
+  .testimonial-text {
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .rating {
+    font-size: 3rem;
+  }
+
+  .stars {
+    font-size: 3rem;
+  }
+}
+
+/* Desktops (1441px and above) */
+@media (min-width: 1441px) {
+  .review-section-container {
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 48%;
+  }
+
+  .review-card {
+    width: 380px;
+    height: 250px;
+  }
+
+  .testimonials-container {
+    margin-right: 270px;
+  }
+
+  .testimonial-text {
+    margin-top: 100px;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .rating {
+    font-size: 3rem;
+  }
+
+  .stars {
+    font-size: 3rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+  <div class="review-section-container">
+    <div class="left-column">
+      <div class="review-container">
+        <div class="review-card">
+          <h2>AVERAGE RATING BASED ON</h2>
+          <h2>500 Reviews</h2>
+          <div class="rating">4.6/5</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="testimonials-container">
+        <div class="testimonial-card" id="testimonial1">
+          <div class="testimonial-details">
+            <img src="./assets/img/banner/student-img-3.png" alt="Image" class="testimonial-image">
+            <div class="testimonial-text">
+              <span class="student-name">Rajesh Kumar sahoo<br> coca cola
+              <p>"This is the best service I've ever used. Highly recommend!"</p>
+            </div>
+            <img src="./assets/img/transparentLogo/output-onlinepngtools (4).png" alt="Company Logo" class="company-logo">
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial2">
+          <div class="testimonial-details">
+            <img src="./assets/img/banner/student-img-3.png" alt="Image" class="testimonial-image">
+            <div class="testimonial-text">
+              <span class="student-name">Pratap Kumar Mishra <br> Apple
+              <p>"An exceptional experience with fantastic support."</p>
+            </div>
+            <img src="./assets/img/transparentLogo/output-onlinepngtools (5).png" alt="Company Logo" class="company-logo">
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial3">
+          <div class="testimonial-details">
+            <img src="./assets/img/banner/student-img-3.png" alt="Image" class="testimonial-image">
+            <div class="testimonial-text">
+              <span class="student-name">Alex Brown <br> Rebook
+              <p>"Great value for money and outstanding quality."</p>
+            </div>
+            <img src="./assets/img/transparentLogo/output-onlinepngtools (6).png" alt="Company Logo" class="company-logo">
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="nav-button prev" onclick="prevTestimonial()"><i class="fas fa-chevron-left"></i></button>
+          <button class="nav-button next" onclick="nextTestimonial()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial-card');
+
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? 'flex' : 'none';
+      });
+    }
+
+    function nextTestimonial() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    function prevTestimonial() {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    // Initialize first testimonial
+    showTestimonial(currentTestimonial);
+  </script>
+</body>
+</html>
