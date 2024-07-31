@@ -10,26 +10,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="./assets/css/Home.css">
-  <link rel="stylesheet" href="./assets/css/modal.css">
 	<title>ATIIT</title>
-
 </head>
 <body>
 
   <nav>
 		<div class="container">
-			<a href="home.html"><img src="./assets/img/logo/logos/Logo_BMP_without line_Transparent (1).png" class="brand" /></a>
+			<a href="index.html"><img src="./assets/img/logo/logos/Logo_BMP_without line_Transparent (1).png" class="brand" /></a>
 			<ul class="nav-menu">
 				<li>
-					<a href="#">COURSES<i class='bx bx-chevron-down' style="font-size: 22px;"></i></a>
+					<a href="#">COURSES<i class='bx bx-chevron-down' style="font-size: 22px; margin-left: 2px;"></i></a>
 					<div class="dropdown-menu">
 						<div class="container">
 							<div class="right-section">
-                                <span class="dropdown-close"><i class='bx bx-chevron-left' ></i> Back</span>
+                <span class="dropdown-close"><i class='bx bx-chevron-left' ></i> Back</span>
 								<h3>IIT FOR ALL PROGRAM</h3>
 								<ul class="dropdown-links">
 									<li>
-										<a href="#">
+										<a href="GenAiCourseView.html">
 											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
 											<div>
 												<h5>IIT Mandi & ATIIT</h5>
@@ -38,7 +36,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="IOT-Industrial-Automation.html">
 											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
 											<div>
 												<h5>IIT Mandi & ATIIT</h5>
@@ -47,7 +45,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="Wireless-Technology.html">
 											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
 											<div>
 												<h5>IIT Mandi & ATIIT</h5>
@@ -56,29 +54,11 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="Microelectronics-and-Semiconductor-Technology.html">
 											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
 											<div>
 												<h5>IIT Mandi & ATIIT</h5>
 												<p>Advanced Certification in Microelectronics and Semiconductor Technology</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
-											<div>
-												<h5>IIT MANDI</h5>
-												<p>Minor in Data Science and Machine Learning</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg"  alt="logo" >
-											<div>
-												<h5>IIT MANDI</h5>
-												<p>Minor in Data Science and Machine Learning</p>
 											</div>
 										</a>
 									</li>
@@ -87,10 +67,7 @@
 						</div>
 					</div>
 				</li>
-                <li>
-					<a href="event.html">EVENTS</a>
-				</li>
-                <li>
+          <li>
 					<a href="success-stories.html">SUCCESS STORIES</a>
 				</li>
                 <li>
@@ -102,9 +79,9 @@
                 <li>
 					<a href="aboutUs.html">ABOUT US</a>
 				</li>
-                <div class="btn-login">
-                    <a href="login.html">LOGIN</a>
-                </div>
+            <div class="btn-login">
+                <a href="register.html">Register</a>
+            </div>
 			</ul>
 			<i class='bx bx-menu toggle-navbar' style="margin: 20px 0px 0px 200px; font-size: 25px;"></i>
 		</div>
@@ -134,14 +111,14 @@
 
 <section class="container-header">
   <div class="content-text">
-      <div class="header-image">
-          <img src="./assets/img/logo/star.svg" alt="Image Description">
-      </div>
-      <div class="header-text">
-          <h1><strong>EmpowerHER</strong> - Scholarship program in Tech for Women in India. <a href="#">Know More</a></h1>
-      </div>
+    <div class="header-text">
+      <h1><strong>Get</strong> 10% Discount on Every Course</h1>
+      <p>Enhance your skills with our top-rated courses. Don't miss this limited-time offer!</p>
+      <a href="scholarship.html" class="apply-now-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
+
 
 
 <!-------------------------------------------hero Banner End--------------------------------------------------->
@@ -150,7 +127,7 @@
 
   <section>
     <div class="logos-container">
-      <h2>Our Alumni Hold <span>Prominent Positions</span> In Various Industries.</h2>
+      <h2 class="logo-header">Our Alumni Hold Prominent Positions In Various Industries.</h2>
       <div class="logos">
         <div class="logos-slide">
           <img src="./assets/img/transparentLogo/output-onlinepngtools (1).png" />
@@ -180,19 +157,43 @@
 
 
   <!-----------------------------------Top Courses----------------------------------->
+
+    <!-- Filter Popup -->
+    <div class="filter-popup" id="filterPopup">
+      <div class="filter-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h2>Select Verticals</h2>
+          <div class="filter-options">
+              <label><input type="checkbox"> Data Science</label>
+              <label><input type="checkbox"> Product Management</label>
+              <label><input type="checkbox"> Strategy & Leadership</label>
+              <label><input type="checkbox"> Digital Transformation</label>
+              <label><input type="checkbox"> Business Management</label>
+              <label><input type="checkbox"> Project Management</label>
+              <label><input type="checkbox"> Senior Management</label>
+              <label><input type="checkbox"> Fintech</label>
+              <label><input type="checkbox"> Business Analytics</label>
+          </div>
+          <div class="filter-buttons">
+              <button class="apply-btn">Apply</button>
+              <button class="clear-btn">Clear Filters</button>
+          </div>
+      </div>
+  </div>
+
+  
   <section class="courses-section">
     <div class="course">
-        <h2>Checkout <span>Our Top</span> Courses</h2>
+        <h2>Our Top Courses</h2>
     </div>
     <div class="courses-controls">
         <h3>Advance Your Career With <span class="highlight">Industry Ready</span> Programs</h3>
         <a href="courseslist.html" class="show-all">Show All</a>
-        <a href="#" class="filter">Filter</a>
+        <a href="#" class="filter"><i class="fas fa-filter"></i>Filter</a>
     </div>
-    <p>Artificial Intelligence</p>
     <div class="cards-container">
         <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
+            <img src="./assets/img/courses/artificial-intelligence-1024x512.webp" alt="Data Science Image">
             <div class="card-content">
                 <div class="course-logo">
                     <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
@@ -203,14 +204,14 @@
                     <span><i class="fas fa-calendar-alt"></i>6 Months – Online</span>
                     <span><i class="fas fa-clock"></i>Enrollment starts soon</span>
                 </div>
-                <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
+                <div class="buttons" style="margin-top: 27px;">
+                    <a href="GenAiCourseView.html"><button class="view-program">View Program</button></a>
+                    <a href="#"><button class="get-brochure">Get Brochure</button></a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
+            <img src="./assets/img/courses/IOT.jpg" alt="Data Science Image">
             <div class="card-content">
                 <div class="course-logo">
                   <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
@@ -222,13 +223,13 @@
                     <span><i class="fas fa-clock"></i>Enrollment starts soon</span>
                 </div>
                 <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
+                    <a href="IOT-Industrial-Automation.html"><button class="view-program">View Program</button></a>
+                    <a href="#"><button class="get-brochure">Get Brochure</button></a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
+            <img src="./assets/img/courses/6g-technology.jpg" alt="Data Science Image">
             <div class="card-content">
                 <div class="course-logo">
                   <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
@@ -240,15 +241,15 @@
                     <span><i class="fas fa-clock"></i>Enrollment starts soon</span>
                 </div>
                 <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
+                    <a href="Wireless-Technology.html"><button class="view-program">View Program</button></a>
+                    <a href="#"><button class="get-brochure">Get Brochure</button></a>
                 </div>
             </div>
         </div>
     </div>
 	<div class="cards-container">
         <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
+            <img src="./assets/img/courses/SEMICONDOUCTOR.webp" alt="Data Science Image">
             <div class="card-content">
                 <div class="course-logo">
                   <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
@@ -260,47 +261,12 @@
                     <span><i class="fas fa-clock"></i>Enrollment starts soon</span>
                 </div>
                 <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
+                    <a href="Microelectronics-and-Semiconductor-Technology.html"><button class="view-program">View Program</button></a>
+                    <a href="#"><button class="get-brochure">Get Brochure</button></a>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
-            <div class="card-content">
-                <div class="course-logo">
-                  <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
-                  <h4>E&ICT Academy IIT Mandi</h4>
-                </div>
-                <p>Executive Program in Artificial Intelligence</p>
-                <div class="details">
-                    <span><i class="fas fa-calendar-alt"></i>11 Months - Online</span>
-                    <span><i class="fas fa-clock"></i>Enroll Till: 14 Jul 2024</span>
-                </div>
-                <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/courses/courses-img-10.jpg" alt="Data Science Image">
-            <div class="card-content">
-                <div class="course-logo">
-                  <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="E&ICT Academy IIT Guwahati" class="logo">
-                  <h4>E&ICT Academy IIT Mandi</h4>
-                </div>
-                <p>Executive Program in Artificial Intelligence</p>
-                <div class="details">
-                    <span><i class="fas fa-calendar-alt"></i>11 Months - Online</span>
-                    <span><i class="fas fa-clock"></i>Enroll Till: 14 Jul 2024</span>
-                </div>
-                <div class="buttons">
-                    <a href="courseview.html"><button class="view-program">View Program</button></a>
-                    <a href="#"><button class="get-brochure" id="openModalBtn">Get Brochure</button></a>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </section>
 
@@ -310,29 +276,29 @@
   <section>
     <div class="carrier-containers">
       <div class="top-heading">
-        <h2 class="sub-heading">Customized <span>Learning</span> Solutions</h2>
+        <h2 class="sub-heading">Customized <span>Learning Solutions</span> for Career Growth</h2>
       </div>
       <div class="carrier-heading">
-        <h1 class="main-heading">Career <span>Growth </span> Through Experience</h1>
+        <h1 class="main-heading">Experience <span>Career Growth </span> Through Practical Learning</h1>
       </div>
       <div class="key-reasons">
         <div class="reason left">
           <i class="fas fa-chalkboard-teacher"></i>
-          <h3>Access education through convenient online classes</h3>
-          <p>Engage in live, instructor-led sessions every weekend, unfolding knowledge and skills, exclusively on
-            Saturdays and Sundays.</p>
+          <h3>Engage in Weekend Classes </h3>
+          <p>Participate in interactive sessions every weekend to unfold new knowledge and skills. Our expert instructors ensure you receive quality education and personalized attention, 
+            making your learning journey effective and enjoyable.</p>
         </div>
         <div class="reason middle">
           <i class="fas fa-bullseye"></i>
-          <h3>Consistently practice on our platform daily</h3>
-          <p>Engage in hands-on learning through assignments and real-world projects to enhance your skills and gain
-            practical experience.</p>
+          <h3>Practice Daily on Our Platform</h3>
+          <p>Consistently enhance your skills with daily practice on our user-friendly platform.Engage in hands-on learning through assignments and real-world projects 
+            designed to provide practical experience and reinforce your understanding..</p>
         </div>
         <div class="reason right">
           <i class="fas fa-headset"></i>
-          <h3>Promptly seek clarification by asking questions</h3>
-          <p>Take advantage of our professional technical support services, available around the clock for any
-            assistance you may need.</p>
+          <h3>24/7 Technical Support for Your Learning Needs</h3>
+          <p>Never feel stuck with our professional technical support services, available around the clock. Promptly seek clarification and assistance whenever needed, 
+            ensuring a smooth and uninterrupted learning experience.</p>
         </div>
       </div>
     </div>
@@ -342,7 +308,7 @@
   
   <section>
     <div class="placement">
-      <h5>Receive <span>Expert</span> Placement Assistance</h5>
+      <h5>Expert <span>Placement Assistance</span> for Your Career Transformation</h5>
     </div>
     <div class="Placement-container">
       <div class="left-column">
@@ -350,28 +316,29 @@
           <i class="fas fa-chart-line"></i>
           <div class="text">
             <h2>360 Degree - Career Launchpad</h2>
-            <p>Get a 360 degree career transformation with resume preparation, GitHub & Linkedin profile builders.</p>
+            <p>Achieve a complete career transformation with our comprehensive 360-degree career launchpad. Benefit from expert resume preparation and specialized GitHub and LinkedIn profile 
+              builders to showcase your skills and attract potential employers.</p>
           </div>
         </div>
         <div class="content-item">
           <i class="fas fa-user-tie"></i>
           <div class="text">
             <h2>Interview Preparation</h2>
-            <p>Apply to recommended jobs based on your profile and crack any interview with our Top 100 Interview
-              Questions guide. Don't worry, we'll also provide mock interviews.</p>
+            <p>Apply to job opportunities tailored to your profile and confidently ace any interview with our Top 100 Interview Questions guide. Additionally, take advantage of our mock interview sessions 
+              to sharpen your interview skills and increase your chances of success.</p>
           </div>
         </div>
         <div class="content-item">
           <i class="fas fa-chalkboard-teacher"></i>
           <div class="text">
             <h2>Experience 1-on-1 mentor sessions</h2>
-            <p>Global Data Leader talks help you gain practical insights into industry requirements, current trends,
-              and opportunities.</p>
+            <p>Gain valuable insights into industry requirements, current trends, and opportunities through personalized 1-on-1 mentor sessions. Learn from Global Data Leader talks and stay ahead in 
+              your career with practical knowledge and expert advice</p>
           </div>
         </div>
       </div>
       <div class="right-column">
-        <img src="./assets/img/logo/laptopscreen.webp" alt="Image">
+        <img src="./assets/img/courses/v3/carrier-path.jpg" alt="Image">
       </div>
     </div>
   </section>
@@ -405,44 +372,43 @@
   </section>
 
   <!--------------------------------------Why Choose Us-------------------------------------------------->
+  <section class="services" id="services">
+    <header class="section-header">
+        <h1>Why <span>Choose</span> Us Atiit</h1>
+    </header>
+    <div class="services-contents">
 
-<section class="services" id="services">
-	<header class="section-header">
-		<h1>Why <span>Choose</span> Us</h1>
-	</header>
-	<div class="services-contents">
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="service-desc">
+                <h2>Flexible Timing</h2>
+                <p>Our courses are designed to fit into your busy schedule. Learn at your own pace with flexible timings that suit your lifestyle.</p>
+            </div>
+        </div>
 
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-calendar"></i>
-			</div>
-			<div class="service-desc">
-				<h2>Flexible Timing</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-		</div>
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="service-desc">
+                <h2>Expert Instructors</h2>
+                <p>Learn from industry experts who bring their real-world experience and knowledge to help you achieve your career goals.</p>
+            </div>
+        </div>
 
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-users"></i>
-			</div>
-			<div class="service-desc">
-				<h2>Expert Teachers</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-		</div>
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="service-desc">
+                <h2>24/7 Live Support</h2>
+                <p>Our dedicated support team is available 24/7 to assist you with any questions or concerns, ensuring you have a seamless learning experience.</p>
+            </div>
+        </div>
 
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-clock"></i>
-			</div>
-			<div class="service-desc">
-				<h2>24/7 Live Support</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-		</div>
-
-	</div>
+    </div>
 </section>
 
 
@@ -575,7 +541,9 @@
 	<!--   === Testimonials Contents Ends ===   -->
 </section>
 
+
 <!------------------------------------Footer Start-------------------------------------->
+
 <footer>
     <div class="footer-container">
         <div class="footer-top">
@@ -589,34 +557,33 @@
         </div>
         <div class="footer-middle">
             <div class="course-buttons">
-                <button>Full Stack Web Development - Full Time</button>
-                <button>Full Stack Web Development - Full Time</button>
-                <button>Software Testing & Automation - Full Time</button>
+                <button>Advanced Certification in Gen AI  - Full Time</button>
+                <button>Advanced Certification in IOT-Industrial Automation - Full Time</button>
+                <button>Advanced Certification in Wireless Technology - Full Time</button>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-links">
                 <div class="link-column">
-                    <a href="#">Success Stories</a>
-                    <a href="#">Our Team</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Masai Blog</a>
-                    <a href="#">Talent Circle</a>
-                    <a href="#">Masai School Admissions Test (MSAT)</a>
+                    <a href="#">- Success Stories</a>
+                    <a href="#">- Our Team</a>
+                    <a href="#">- Careers</a>
+                    <a href="#">- Atiit Blog</a>
+                    <a href="#">- Talent Circle</a>
                 </div>
                 <div class="link-column">
-                    <a href="#">Hire From Us</a>
-                    <a href="#">Our Investors</a>
-                    <a href="#">Newsroom</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Become Coach</a>
+                    <a href="#">- Hire From Us</a>
+                    <a href="#">- Our Investors</a>
+                    <a href="#">- Newsroom</a>
+                    <a href="#">- Contact Us</a>
+                    <a href="#">- Become Coach</a>
                 </div>
                 <div class="link-column">
-                    <a href="#">About Us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Referral Program</a>
-                    <a href="#">Masai Learn</a>
-                    <a href="#">Industry Mentors</a>
+                    <a href="#">- About Us</a>
+                    <a href="#">- FAQ</a>
+                    <a href="#">- Referral Program</a>
+                    <a href="#">- Atiit Learn</a>
+                    <a href="#">- Industry Mentors</a>
                 </div>
                 <div class="link-column">
                     <a href="#">Connect with a growing community of learners</a>
@@ -628,49 +595,52 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </div>
 	<div class="bottom-footer">
 	  <div class="social-icons">
 		<p>COPYRIGHT © ATIIT PRIVATE LIMITED. ALL RIGHTS RESERVED</p>
+	  </div>
 	</div>
-	</div>
+  <div class="right-icons">
+    <a href="#" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="chatbot-icon"><i class="fas fa-comments"></i></a>
+</div>
 </footer>
 
 
 
-<!---------------------------------- Modal Structure ---------------------------------->
 
+<!---------------------------------- Get Broucher Modal Structure ---------------------------------->
+
+<!-- Modal for Brochure -->
 <div id="brochureModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="modal-header">
-      <img src="./assets/img/logo/iit-kanpur-logo-round.webp" alt="Logo">
-      <div>
-        <h3>E&ICT Academy IIT Kanpur</h3>
-        <h2>Your Brochure is Ready</h2>
-        <p>Fill the form to know about Certificate, Faculty, curriculum and more</p>
+      <span class="close" onclick="closeModal('brochureModal')">&times;</span>
+      <div class="modal-header">
+          <img src="./assets/img/logo/Indian-Institute-of-Technology-Mandi-40677820.jpg" alt="Logo">
+          <div>
+              <h2>Your Brochure is Ready</h2>
+              <p>Fill the form to know about Certificate, Faculty, curriculum, and more</p>
+          </div>
       </div>
-    </div>
-    <form>
-      <label  class="label" for="name">Name *</label>
-      <input class="input" type="text" id="name" name="name" required>
-      
-      <label class="label" for="email">Email *</label>
-      <input  class="input" type="email" id="email" name="email" required>
-      
-      <label class="label" for="phone">Phone *</label>
-      <input  class="input" type="tel" id="phone" name="phone" required>
-      
-      <button  class="button" type="submit" class="download-btn">Download Brochure</button>
-    </form>
-    <p class="disclaimer">By submitting the form, you agree to our Terms and Conditions and our Privacy Policy.</p>
+      <form>
+          <label class="label" for="name">Name *</label>
+          <input class="input" type="text" id="name" name="name" required>
+          
+          <label class="label" for="email">Email *</label>
+          <input class="input" type="email" id="email" name="email" required>
+          
+          <label class="label" for="phone">Phone *</label>
+          <input class="input" type="tel" id="phone" name="phone" required>
+          
+          <button class="button" type="submit" style="margin-left: 230px;">Download Brochure</button>
+      </form>
+      <p class="disclaimer">By submitting the form, you agree to our Terms and Conditions and our Privacy Policy.</p>
   </div>
 </div>
+
 
 <!-------------------------------------------Footer End--------------------------------------------------->
 

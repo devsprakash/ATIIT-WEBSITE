@@ -860,11 +860,11 @@ body{
 
 /* General Styles */
 .text-header-4 {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 700;
     font-family: var(--open-sans);
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px 0px 0px 20px;
 }
 
 .text-header-4 h2 {
@@ -989,6 +989,7 @@ body{
     color: black;
     font-weight: 700;
     font-size: 16px;
+    margin-top: 50px;
 }
 
 .section-5-container h2 {
@@ -1676,7 +1677,6 @@ body{
         margin-bottom: 10px;
     }
 }
-
 
 
 
