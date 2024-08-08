@@ -53,9 +53,9 @@ a:hover {
 }
 
 .get-free-left-content img {
-    max-width: 60%;
+    max-width: 45%;
     height: auto;
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 .section-title {
@@ -63,10 +63,10 @@ a:hover {
 }
 
 .big-title {
-    margin-top: 40px;
     font-size: 28px;
     font-weight: bold;
     color: #333;
+    margin-left: 20px;
 }
 
 .get-free-form-content {
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .group-form-box {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust spacing between form fields */
@@ -289,4 +289,13 @@ h4 {
     .gender-options label {
         font-size: 12px;
     }
+}
+
+/*==================successfully modal =====================*/
+
+.error { 
+    color: red; 
+    font-size: 12px ;
+    font-family: var(--open-sans);
+    font-weight: 600;
 }

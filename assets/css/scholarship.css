@@ -5,16 +5,25 @@
     --light-blue: #0d6aba;
     --dark-blue: #008CEA;
     --grey: #1c1c1c;
+    --secondary-color:#5a5959;
 }
 
+body{
+    background-color: #fff;
+}
+
+
+/*========================section-1=====================*/
+
+
 /* Container styling */
-.container {
+.scholarship-header-container {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     padding: 20px;
-    max-width: 1200px; /* Added max-width for better control */
+    max-width: 1300px; /* Added max-width for better control */
     margin: 0 auto; /* Center horizontally */
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
@@ -38,54 +47,55 @@
 .image img {
     height: 500px;
     width: 500px;
+    margin-left: 120px;
 }
 
 /* Heading styling */
 .content h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     margin: 10px 0;
-    color: #333;
+    color: var(--grey);
     font-family: var(--open-sans);
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
-/* Timing section styling */
-.timing {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: var(--blue);
-    margin: 20px 0;
-    font-family: var(--open-sans);
-    font-weight: 700;
-}
 
 /* Paragraph styling */
 .content p {
     font-size: 1em;
-    color: #666;
+    color: var(--secondary-color);
     margin-bottom: 20px;
     line-height: 1.5;
     font-family: var(--open-sans);
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 /* Link styling */
 .content a {
     text-decoration: none;
     font-size: 1.2em;
-    color: var(--blue);
-    background-color: white;
-    border: 2px solid var(--dark-blue);
-    padding: 10px 20px;
-    border-radius: 4px;
+    color: white;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    padding: 15px 20px;
+    border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
     font-family: var(--open-sans);
     font-weight: 600;
 }
 
+.content i {
+   color: white;
+   font-size: 18px;
+   margin-left: 10px;
+}
+
 .content a:hover {
-    background-color: #007bff;
+    background-color: var(--dark-blue);
     color: white;
+    border: 1px solid var(--dark-blue);
 }
 
 /* Responsive styles */
@@ -150,5 +160,399 @@
         font-size: 0.8em;
         padding: 10px 40px;
         margin-left: 50px;
+    }
+}
+
+
+/*=============================section-2======================*/
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.timeline-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: #fff;
+}
+
+.timeline-content .timeline-heading {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--open-sans);
+    margin-bottom: 10px;
+}
+
+.timeline-sub-heading{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--open-sans);
+    color: var(--secondary-color);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.timeline-point {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background: var(--blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline-details {
+    flex: 1;
+}
+
+.timeline-details h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--blue);
+}
+
+.timeline-details p {
+    font-size: 1.2em;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.timeline-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-image {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeline-image img {
+        max-width: 100%;
+    }
+}
+
+
+/*================================section-3====================*/
+
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Adjust background color as needed */
+}
+
+.achievements-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.achievements-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--open-sans);
+    color: #333; /* Adjust color as needed */
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.achievements-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Space between boxes */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.achievement-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px; /* Adjust as needed */
+}
+
+.achievement-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white; /* Adjust color as needed */
+    margin-bottom: 10px;
+    border-radius: 50%; /* Create a circular border */
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the h2 horizontally */
+    background-color: var(--blue);
+}
+
+.achievement-box p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--grey); /* Adjust color as needed */
+    font-family: var(--open-sans);
+    font-weight: 600;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 576px) {
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 100%;
+        max-width: 300px; /* Ensure boxes do not get too large on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .achievements-header h2 {
+        font-size: 24px; /* Smaller header font size */
+    }
+
+    .achievement-box h2 {
+        width: 70px; /* Smaller circle */
+        height: 70px; /* Smaller circle */
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .achievement-box p {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .achievements-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 100%;
+        max-width: 350px; /* Ensure boxes fit well on tablets */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .achievements-header h2 {
+        font-size: 28px; /* Adjust font size */
+    }
+
+    .achievement-box h2 {
+        width: 75px; /* Moderate circle size */
+        height: 75px; /* Moderate circle size */
+        font-size: 26px; /* Adjust font size */
+    }
+
+    .achievement-box p {
+        font-size: 15px; /* Adjust text size */
+    }
+}
+
+/* Responsive styles for laptops and desktops */
+@media (min-width: 769px) {
+    .achievements-row {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .achievement-box {
+        width: 30%;
+        padding: 20px; /* Default padding */
+    }
+
+    .achievements-header h2 {
+        font-size: 32px; /* Larger header font size */
+    }
+
+    .achievement-box h2 {
+        width: 80px; /* Original circle size */
+        height: 80px; /* Original circle size */
+        font-size: 28px; /* Original font size */
+    }
+
+    .achievement-box p {
+        font-size: 16px; /* Original text size */
+    }
+}
+
+
+/*=======================section-4=====================*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.community-section {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.beyond-classroom {
+    text-align: center;
+}
+
+.beyond-classroom h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.beyond-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.beyond-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 200;
+}
+
+.beyond-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.beyond-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+    text-align: left;
+}
+
+.beyond-details p {
+    font-size: 1em;
+    color: #666;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .beyond-items {
+        flex-direction: column;
+    }
+}
+
+
+
+/*======================section-4=========================*/
+
+
+.scholarship-section {
+    background-color: #fff;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.discount-info {
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+
+.discount-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.discount-info a.claim-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.discount-info a.claim-button:hover {
+    background-color: #0056b3;
+}
+
+.timer {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .discount-info {
+        padding: 15px;
+    }
+
+    .discount-info a.claim-button {
+        font-size: 1em;
+        padding: 8px 16px;
     }
 }

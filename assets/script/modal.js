@@ -83,3 +83,66 @@ window.onclick = function(event) {
 
 
 
+/*===========================Hero Banner modal ========================*/
+
+    const expertmodal = document.getElementById("expertModal");
+
+    const expertbtn = document.getElementById("openModal");
+
+    const expertspan = document.getElementsByClassName("close")[0];
+
+    expertbtn.onclick = function() {
+        expertmodal.style.display = "block";
+    }
+
+    expertspan.onclick = function() {
+        expertmodal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            expertmodal.style.display = "none";
+        }
+    }
+
+
+/*====================course view modal ====================*/
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+  }
+  
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
+  
+  // Close the modal when clicking outside of it
+  window.onclick = function(event) {
+      const brochureModal = document.getElementById('brochureModal');
+      if (event.target === brochureModal) {
+          brochureModal.style.display = "none";
+      }
+  }
+  
+
+  /*=============================discount modal========================*/
+  
+// JavaScript for Modal
+document.getElementById('applyNowBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default action of the link
+    document.getElementById('discount-Modal').style.display = 'flex';
+});
+
+document.querySelector('.discount-close').addEventListener('click', function() {
+    document.getElementById('discount-Modal').style.display = 'none';
+});
+
+document.getElementById('courseForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const selectedCourse = document.getElementById('course').value;
+    if (selectedCourse) {
+        // Redirect to the quiz page with the course parameter
+        window.location.href = `quiz.html?course=${encodeURIComponent(selectedCourse)}`;
+    }
+});

@@ -9,6 +9,9 @@
     --grey: #1c1c1c;
 }
 
+body{
+    background-color: #fff;
+}
 
 /* Keyframes for animations */
 @keyframes fadeIn {
@@ -223,8 +226,7 @@
 }
 
 .buttons .view-program {
-    margin: 15px 0px 0px 40px;
-    padding: 14px 26px;
+    padding: 15px 45px;
     border: none;
     border-radius: 10px;
     font-size: 15px;
@@ -243,8 +245,7 @@
 }
 
 .buttons .get-brochure {
-    margin: 15px 0px 0px 45px;
-    padding: 14px 26px;
+    padding: 15px 45px;
     border: none;
     border-radius: 10px;
     font-size: 15px;

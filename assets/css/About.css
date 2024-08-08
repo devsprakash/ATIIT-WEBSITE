@@ -1,4 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+:root {
+    --open-sans: 'Open Sans', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+    --blue: #3c3ff0;
+    --light-blue: #0d6aba;
+    --dark-blue: #008CEA;
+    --grey: #1c1c1c;
+    --secondary-color: #5a5959;
+}
+
+
 .why-atiit {
     background-color: #3b3b3b;
     color: white;
@@ -51,6 +64,7 @@
 .comparison-table td {
     vertical-align: middle;
 }
+
 .comparison-table svg {
     width: 24px;
     height: 24px;
@@ -295,6 +309,7 @@ nav .nav-menu .dropdown-menu .right-section h3 {
         width: auto;
     }
 }
+
 .container-header {
     background: linear-gradient(to right, #4a90e2, #9013fe);
     color: #fff;
@@ -527,7 +542,7 @@ font-size: 1.5em;
 /* styles.css */
 .background {
 width: 100%;
-background-color: #3c3ff0; /* Blue background */
+background-color: #9ebcdd; /* Blue background */
 padding: 20px 0; /* Adjust as needed for spacing */
 }
 
@@ -548,18 +563,15 @@ display: inline-block;
 padding: 10px 20px;
 font-size: 1rem;
 font-weight: 500;
-color: #3c3ff0;
+color: #4565e7;
 background-color: #fff;
 border: 2px solid #fff;
 border-radius: 4px;
 cursor: pointer;
 transition: background-color 0.3s, color 0.3s;
+margin-right: 110px;
 }
 
-.button:hover {
-background-color: #fff;
-color: #3c3ff0;
-}
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -952,7 +964,6 @@ form {
     border-radius: 5px;
     font-size: 16px;
 }
-
 
 .disclaimer {
     margin-top: 20px;

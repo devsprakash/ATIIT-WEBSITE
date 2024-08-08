@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+:root {
+    --open-sans: 'Open Sans', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+    --blue: #3c3ff0;
+    --light-blue: #0d6aba;
+    --dark-blue: #008CEA;
+    --grey: #1c1c1c;
+    --secondary-color: #5a5959;
+}
+
+/* Center and style the category menu */
+.category-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.category-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-menu a.active {
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.category-menu a:hover {
+    color: #fff;
+    background-color: var(--light-blue);
+}
+
+/* Blog section container */
+.blog-section-container {
+    background-color: #fff;
+    padding: 20px; /* Add padding to the section */
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card styling */
+.blog-card {
+    transition: 0.3s;
+    width: 30%; /* Width of the card */
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures that the image and content fit inside the card */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid silver;
+}
+
+.blog-card img {
+    width: 100%; /* Make the image fit the width of the card */
+    height: 180px; /* Maintain the aspect ratio of the image */
+}
+
+.container {
+    padding: 2px 16px;
+    flex: 1;
+}
+
+.title {
+    color: var(--blue);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 14px;
+    color: var(--grey);
+    padding-bottom: 20px; /* Adjust padding to accommodate icons */
+    font-family: var(--open-sans);
+    font-weight: 600;
+    border-bottom: 1px solid var(--secondary-color);
+    overflow: hidden; /* Ensure content fits within the card */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    margin-bottom: 10px;
+}
+
+.content a {
+    color: #3c3ff0;
+}
+
+.author-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    padding-bottom: 10px;
+}
+
+.view-count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #777;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-right: 10px;
+}
+
+.view-icon {
+    margin-right: 8px;
+    font-size: 14px;
+    color: var(--blue); /* Size of the view icon */
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--blue);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.like-button:hover {
+    color: var(--light-blue);
+}
+
+.like-button .like-icon {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* Blog header and paragraph styling */
+.blog-header {
+    font-family: var(--open-sans);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--grey);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.blog-para {
+    font-family: var(--open-sans);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Responsive styling */
+
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .blog-card {
+        width: 30%;
+    }
+}
+
+/* Desktops and small laptops (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-card {
+        width: 40%;
+    }
+}
+
+/* Laptops and tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-card {
+        width: 48%;
+    }
+}
+
+/* Tablets and small devices (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .category-menu {
+        flex-direction: column; /* Stack category menu items vertically on small screens */
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 100%; /* Full width for tablets and small devices */
+        margin: 10px 0; /* Reduce margin for mobile devices */
+    }
+
+    .title {
+        font-size: 18px; /* Adjust title font size for mobile devices */
+    }
+
+    .content {
+        font-size: 12px; /* Adjust content font size for mobile devices */
+    }
+
+    .author-date {
+        font-size: 12px; /* Adjust author-date font size for mobile devices */
+    }
+
+    .view-count {
+        font-size: 12px; /* Adjust view-count font size for mobile devices */
+    }
+}
+
+/* Small devices (up to 575px) */
+@media (max-width: 575px) {
+    .category-menu {
+        flex-direction: column; /* Stack category menu items vertically on mobile screens */
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 100%; /* Full width for mobile devices */
+        margin: 10px 0; /* Reduce margin for mobile devices */
+    }
+
+    .title {
+        font-size: 16px; /* Adjust title font size for very small devices */
+    }
+
+    .content {
+        font-size: 12px; /* Adjust content font size for very small devices */
+    }
+
+    .author-date {
+        font-size: 12px; /* Adjust author-date font size for very small devices */
+    }
+
+    .view-count {
+        font-size: 12px; /* Adjust view-count font size for very small devices */
+    }
+}
+
+
+
+/*================================section-2================================*/
+
+
+/* Base styles */
+.Explore-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.Explore-container h2 {
+    text-align: left;
+    margin: 0px 0px 20px 50px;
+    font-size: 30px;
+    font-family: var(--open-sans);
+}
+
+.Explore-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Explore-prev, .Explore-next {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.Explore-card-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.Explore-card {
+    width: 300px;
+    height: 320px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.Explore-card img {
+    width: 100%;
+    height: auto;
+}
+
+.Explore-card h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.Explore-card p {
+    padding: 0 10px 10px;
+    color: #666;
+}
+
+/* Mobile (up to 599px) */
+@media (max-width: 599px) {
+    .Explore-container {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .Explore-container h2 {
+        margin: 0 0 10px 20px;
+        font-size: 20px;
+    }
+
+    .Explore-prev, .Explore-next {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .Explore-card-container {
+        flex-direction: column;
+    }
+
+    .Explore-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+/* Tablet (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Explore-container {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .Explore-container h2 {
+        margin: 0 0 15px 30px;
+        font-size: 22px;
+    }
+
+    .Explore-prev, .Explore-next {
+        font-size: 1.8rem;
+        padding: 9px;
+    }
+
+    .Explore-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Explore-card {
+        width: 250px;
+        height: 280px;
+        margin: 10px;
+    }
+}
+
+/* Laptop (900px to 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Explore-container {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .Explore-container h2 {
+        margin: 0 0 15px 40px;
+        font-size: 24px;
+    }
+
+    .Explore-prev, .Explore-next {
+        font-size: 1.9rem;
+        padding: 10px;
+    }
+
+    .Explore-card-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .Explore-card {
+        width: 280px;
+        height: 300px;
+    }
+}
+
+/* Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .Explore-container {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .Explore-container h2 {
+        margin: 0 0 20px 50px;
+        font-size: 25px;
+    }
+
+    .Explore-prev, .Explore-next {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .Explore-card-container {
+        flex-wrap: nowrap;
+    }
+
+    .Explore-card {
+        width: 300px;
+        height: 320px;
+    }
+}
