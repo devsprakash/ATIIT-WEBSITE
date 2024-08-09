@@ -517,6 +517,49 @@ left: 10px;
 .slick-next {
 right: 10px;
 }
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 60%; /* Adjust based on card height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1; /* Make sure it takes remaining space */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    color: #666;
+    font-size: 0.9rem; /* Adjust font size as needed */
+}
+
 .MuiButtonBase-root {
 display: inline-flex;
 align-items: center;
